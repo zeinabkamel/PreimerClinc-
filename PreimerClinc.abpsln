@@ -1,0 +1,48 @@
+{
+  "id": "71c3f94e-d862-4dd9-9023-27120b5b5247",
+  "template": "app-nolayers",
+  "versions": {
+    "AbpFramework": "9.3.4",
+    "AbpStudio": "1.3.2",
+    "TargetDotnetFramework": "net9.0"
+  },
+  "modules": {
+    "PreimerClinc": {
+      "path": "PreimerClinc.abpmdl"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/run-profiles/Default.abprun.json"
+    }
+  },
+  "options": {
+    "httpRequests": {
+      "ignoredUrls": [
+      
+      ]
+    }
+  },
+  "creatingStudioConfiguration": {
+    "template": "app-nolayers",
+    "createdAbpStudioVersion": "1.3.2",
+    "multiTenancy": "true",
+    "runInstallLibs": "true",
+    "useLocalReferences": "false",
+    "uiFramework": "angular",
+    "databaseProvider": "ef",
+    "runDbMigrator": "true",
+    "databaseManagementSystem": "sqlserver",
+    "createInitialMigration": "true",
+    "theme": "leptonx-lite",
+    "themeStyle": "",
+    "themeMenuPlacement": "",
+    "progressiveWebApp": "",
+    "runProgressiveWebAppSupport": "",
+    "publicWebsite": "",
+    "socialLogin": "false",
+    "selectedLanguages": ["English", "Arabic", "Chinese (Simplified)", "Chinese (Traditional)", "Czech", "English (United Kingdom)", "Finnish", "French", "German (Germany)", "Hindi ", "Hungarian", "Icelandic", "Italian", "Portuguese (Brazil)", "Romanian (Romania)", "Russian", "Slovak", "Spanish", "Swedish", "Turkish", ],
+    "defaultLanguage": "English",
+    "createCommand": "abp new PreimerClinc -t app-nolayers --ui-framework angular --mobile  --database-provider ef --database-management-system sqlserver --theme leptonx-lite --without-cms-kit --sample-crud-page --dont-run-bundling --no-social-logins -no-gdpr -no-openiddict-admin-ui -no-audit-logging -no-file-management -no-language-management -no-text-template-management"
+  }
+}

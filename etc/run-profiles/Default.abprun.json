@@ -1,0 +1,23 @@
+﻿{
+  "applications": {
+    "PreimerClinc.Angular": {
+      "type": "cli",
+      "workingDirectory": "../../angular",
+      "startCommand": "./start.ps1",
+      "launchUrl": "http://localhost:4200",
+      "execution": {
+        "order": 0
+      }
+    },
+    "PreimerClinc": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44385",
+      "healthCheckEndpoint": "/health-status",
+      "healthUiEndpoint": "/health-ui",
+      "path": "../../PreimerClinc/PreimerClinc.csproj",
+      "execution": {
+        "order": 1
+      }
+    }
+  }
+}
